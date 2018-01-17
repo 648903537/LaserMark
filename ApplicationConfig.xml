@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LaserMarking>
+  <LoginParameters>
+    <LogInType>USB</LogInType>
+    <LoadExtractPattern>^(\S.*);(\S.*)$</LoadExtractPattern>
+  </LoginParameters>
+  <ScannerParameters>
+    <SerialPort>COM1</SerialPort>
+    <BaudRate>9600</BaudRate>
+    <Parity>0</Parity>
+    <StopBits>1</StopBits>
+    <DataBits>8</DataBits>
+    <NewLineSymbol>\r</NewLineSymbol>
+  </ScannerParameters>
+  <PrintParameters>
+    <PrintSerialPort>COM3</PrintSerialPort>
+    <PrintBaudRate>9600</PrintBaudRate>
+    <PrintParity>0</PrintParity>
+    <PrintStopBits>1</PrintStopBits>
+    <PrintDataBits>8</PrintDataBits>
+    <PrintNewLineSymbol>\r</PrintNewLineSymbol>
+  </PrintParameters>
+  <GlobalParameters>
+    <Language>ZHS</Language>
+    <!--US,ZHS-->
+    <IPAdress>127.0.0.1</IPAdress>
+    <Port>50100</Port>
+    <MBNExtractPattern>^X\S*$</MBNExtractPattern>
+    <!--^(MBN)\S*$;[^(MBN)]*$-->
+    <EquipmentExtractPattern>^EQ\S.*$</EquipmentExtractPattern>
+    <OpacityValue>70</OpacityValue>
+    <!-- 悬浮框的位置   1071,675-->
+    <LocationXY>1071|675</LocationXY>
+    <MaterialWarningQty>100</MaterialWarningQty>
+    <ChangeFileName>Enable</ChangeFileName>
+    <WaitTime>500</WaitTime>
+
+    <AUTH_TEAM></AUTH_TEAM>
+    <BackupsOKFile>Y</BackupsOKFile>
+    <!--Y/N-->
+
+    <OUTPUT_MODE>1</OUTPUT_MODE>
+    <!--1 = Laser Mark 2 = Printer 3 = User Table -->
+    <LABEL_TEMPLATE_PATH>D:\LaserMarking\LabelTemplate\</LABEL_TEMPLATE_PATH>
+    <!--Setting of label Template file path-->
+    <LABEL_TEMPLATE_FILE>.*.prn</LABEL_TEMPLATE_FILE>
+    <!--Setting of Zebra Label Template file name, Regular Expression-->
+    <DEFAULT_LABLE>Label_01.prn</DEFAULT_LABLE>
+    <!--Setting of default Label file Name-->
+    <LABEL_QTY>2</LABEL_QTY>
+    <!--one label print how many barcode-->
+    <MATERIAL_SPLICING>disable</MATERIAL_SPLICING>
+    <!--disable/enable-->
+    <BAD_BOARD_AUTO_RESET>DISABLE</BAD_BOARD_AUTO_RESET>
+    <!--ENABLE/DISABLE-->
+  </GlobalParameters>
+  <Graphics>
+    <LAYER_DISPLAY>TOP_GRAPHIC;BOT_GRAPHIC</LAYER_DISPLAY>
+  </Graphics>
+  <Checklist>
+    <CHECKLIST_SOURCE>xml</CHECKLIST_SOURCE>
+    <!--table/xml-->
+    <CHECKLIST_IPAddress>127.0.0.1</CHECKLIST_IPAddress>
+    <CHECKLIST_Port>50200</CHECKLIST_Port>
+    <AUTH_CHECKLIST_APP_TEAM>IPQC,1;IPQC,1</AUTH_CHECKLIST_APP_TEAM>
+    <!--Supervisor,IPQC-->
+    <CHECKLIST_FREQ>M10,4;,0.1</CHECKLIST_FREQ>
+    <!--M10,4;,2!-->
+    <SHIFT_CHANGE_TIME>0800;1620</SHIFT_CHANGE_TIME>
+    <RESTORE_TREAD_TIMER>60</RESTORE_TREAD_TIMER>
+    <!--60s -->
+    <RESTORE_TIME>10</RESTORE_TIME>
+    <!-- 10mins -->
+    <UPLOAD_NG_MODE>1</UPLOAD_NG_MODE>
+    <!--1.Fail 2.Scrap-->
+  </Checklist>
+  <Folders>
+    <LogFileFolder>D:\files\</LogFileFolder>
+    <LogTransOK>D:\files\transOK\</LogTransOK>
+    <LogTransError>D:\files\transError\</LogTransError>
+    <CheckListFolder>D:\CheckList\</CheckListFolder>
+    <MDAPath>D:\MDA\</MDAPath>
+    <BJIPath>D:\BJI\</BJIPath>
+    <BCIPath>D:\BCT\import</BCIPath>
+
+    <FilterByFileName>enable</FilterByFileName>
+    <!--enable/disable-->
+    <FileNamePattern>^(\S{7}) \S.*$</FileNamePattern>
+  </Folders>
+</LaserMarking>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <StationNumber value="SMT01-0100-01">
+    <shift value="白班">
+      <CheckListItems>
+        <Item name="静检-气压管理" point="气压" standard="0.4-0.6 mpa" method="设备参数" inputType="2"/>
+        <Item name="静检-设备 5S" point="清洁" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="静检-针床" point="治具型号" standard=" 与产品相符" method="目视" inputType="1"/>
+        <Item name="静检-针床" point="异物" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="动检-程序名" point="程序名" standard="当前生产型号" method="设备设置" inputType="1"/>
+        <Item name="动检-系统自检" point="电路" standard="工作正常" method="系统自检" inputType="1"/>
+        <Item name="动检-测试数据" point="数值" standard="清零" method="手动" inputType="1"/>
+        <Item name="动检-Master Sampl" point="准确度" standard="样品确认" method="手动测试" inputType="1"/>
+      </CheckListItems>
+    </shift>
+    <shift value="晚班">
+      <CheckListItems>
+        <Item name="静检-气压管理" point="气压" standard="0.4-0.6 mpa" method="设备参数" inputType="2"/>
+        <Item name="静检-设备 5S" point="清洁" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="静检-针床" point="治具型号" standard=" 与产品相符" method="目视" inputType="1"/>
+        <Item name="静检-针床" point="异物" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="动检-程序名" point="程序名" standard="当前生产型号" method="设备设置" inputType="1"/>
+        <Item name="动检-系统自检" point="电路" standard="工作正常" method="系统自检" inputType="1"/>
+        <Item name="动检-测试数据" point="数值" standard="清零" method="手动" inputType="1"/>
+        <Item name="动检-Master Sampl" point="准确度" standard="样品确认" method="手动测试" inputType="1"/>
+      </CheckListItems>
+    </shift>
+    <DataInputType>良好,异常,处置完,不开机,公休,休息,检修保养,维护</DataInputType>
+  </StationNumber>
+  <StationNumber value="20110010">
+    <shift value="白班">
+      <CheckListItems>
+        <Item name="静检-气压管理" point="气压" standard="0.4-0.6 mpa" method="设备参数" inputType="2"/>
+        <Item name="静检-设备 5S" point="清洁" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="静检-针床" point="治具型号" standard=" 与产品相符" method="目视" inputType="1"/>
+        <Item name="静检-针床" point="异物" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="动检-程序名" point="程序名" standard="当前生产型号" method="设备设置" inputType="1"/>
+        <Item name="动检-系统自检" point="电路" standard="工作正常" method="系统自检" inputType="1"/>
+        <Item name="动检-测试数据" point="数值" standard="清零" method="手动" inputType="1"/>
+        <Item name="动检-Master Sampl" point="准确度" standard="样品确认" method="手动测试" inputType="1"/>
+      </CheckListItems>
+    </shift>
+    <shift value="晚班">
+      <CheckListItems>
+        <Item name="静检-气压管理" point="气压" standard="0.4-0.6 mpa" method="设备参数" inputType="2"/>
+        <Item name="静检-设备 5S" point="清洁" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="静检-针床" point="治具型号" standard=" 与产品相符" method="目视" inputType="1"/>
+        <Item name="静检-针床" point="异物" standard="5S 标准" method="目视、手动" inputType="1"/>
+        <Item name="动检-程序名" point="程序名" standard="当前生产型号" method="设备设置" inputType="1"/>
+        <Item name="动检-系统自检" point="电路" standard="工作正常" method="系统自检" inputType="1"/>
+        <Item name="动检-测试数据" point="数值" standard="清零" method="手动" inputType="1"/>
+        <Item name="动检-Master Sampl" point="准确度" standard="样品确认" method="手动测试" inputType="1"/>
+      </CheckListItems>
+    </shift>
+    <DataInputType>良好,异常,处置完,不开机,公休,休息,检修保养,维护</DataInputType>
+  </StationNumber>
+</Root>

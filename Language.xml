@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageConfig>
+  <Language name ="en">  
+    <MAIN_TITLE>Label Marking</MAIN_TITLE>  
+    <ERROR_API_CALL_ERROR>Api Call :</ERROR_API_CALL_ERROR>
+    <ERROR_STATION_SETTINGS_ERROR>Station settings error</ERROR_STATION_SETTINGS_ERROR>
+    <ERROR_SCANNER_PORT_OPEN>Port Open</ERROR_SCANNER_PORT_OPEN>
+    <ERROR_SCANNER_PORT_CLOSE>Scanner Port couldn't be open</ERROR_SCANNER_PORT_CLOSE>
+    <ERROR_CONFIG_ERROR>Configuration Error</ERROR_CONFIG_ERROR> 
+    <ERROR_CONNECT_TO_DMS_SUCCESS>Conncection to DMS established</ERROR_CONNECT_TO_DMS_SUCCESS>
+    <ERROR_CONNECT_TO_DMS_FAILED>Conncection to DMS failed</ERROR_CONNECT_TO_DMS_FAILED>
+    <ERROR_INITIALIZE_ERROR>Initialize Error</ERROR_INITIALIZE_ERROR>
+    <ERROR_INITIALIZE_SUCCESS>Initialize Success</ERROR_INITIALIZE_SUCCESS>
+  
+  </Language>
+  <Language name ="cn">
+
+  </Language>
+</LanguageConfig>

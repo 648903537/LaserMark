@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D471D90-C480-4B08-83C3-91E664CA2370}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LaserMark</RootNamespace>
+    <AssemblyName>LaserMark</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ATS_A_icon50x50.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonLibrary">
+      <HintPath>D:\Projects\MSLStorage\MSLStorage\reference\CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="IMSApiDotNet, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\IMSApiDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>..\reference\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>D:\Projects\Reference\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MessageControl">
+      <HintPath>..\reference\MessageControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\TabControlEx.dll</HintPath>
+    </Reference>
+    <Reference Include="TTEDataGrid">
+      <HintPath>..\..\..\AssemblyClient\reference\TTEDataGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="com.amtec.action\ActivateWorkorder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="com.amtec.action\AppendAttribute.cs" />
+    <Compile Include="com.amtec.action\AssignSerialNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="com.amtec.action\CheckSerialNumberState.cs" />
+    <Compile Include="com.amtec.action\CheckUserSkill.cs" />
+    <Compile Include="com.amtec.action\CommonFunction.cs" />
+    <Compile Include="com.amtec.action\ConfigManage.cs" />
+    <Compile Include="com.amtec.action\EquipmentManager.cs" />
+    <Compile Include="com.amtec.action\GetApplicationConfigData.cs" />
+    <Compile Include="com.amtec.action\GetApplicationDatas.cs" />
+    <Compile Include="com.amtec.action\GetAttributeValue.cs" />
+    <Compile Include="com.amtec.action\GetCurrentWorkorder.cs" />
+    <Compile Include="com.amtec.action\GetDocumentData.cs" />
+    <Compile Include="com.amtec.action\GetMaterialBinData.cs" />
+    <Compile Include="com.amtec.action\GetNextSerialNumber.cs" />
+    <Compile Include="com.amtec.action\GetNumbersOfSingleBoards.cs" />
+    <Compile Include="com.amtec.action\GetProductQuantity.cs" />
+    <Compile Include="com.amtec.action\GetSerialNumberInfo.cs" />
+    <Compile Include="com.amtec.action\GetUserData.cs" />
+    <Compile Include="com.amtec.action\GetWorkOrder.cs" />
+    <Compile Include="com.amtec.action\GetWorkPlanData.cs" />
+    <Compile Include="com.amtec.action\InitializeMainGUI.cs" />
+    <Compile Include="com.amtec.action\LanguagePack.cs" />
+    <Compile Include="com.amtec.action\LogHelper.cs" />
+    <Compile Include="com.amtec.action\MouseMoveClass.cs" />
+    <Compile Include="com.amtec.action\MouseMoveClass2.cs" />
+    <Compile Include="com.amtec.action\MutiLanguages.cs" />
+    <Compile Include="com.amtec.action\ProcessMaterialBinData.cs" />
+    <Compile Include="com.amtec.action\RemoveAttributeValue.cs" />
+    <Compile Include="com.amtec.action\SetupStateChange.cs" />
+    <Compile Include="com.amtec.action\ShippingManager.cs" />
+    <Compile Include="com.amtec.action\SetUpManager.cs" />
+    <Compile Include="com.amtec.action\SocketClientHandler.cs" />
+    <Compile Include="com.amtec.action\SocketClientHandler2.cs" />
+    <Compile Include="com.amtec.action\SocketServerHandle.cs" />
+    <Compile Include="com.amtec.action\UploadProcessResult.cs" />
+    <Compile Include="com.amtec.action\UtilityFunction.cs" />
+    <Compile Include="com.amtec.action\ZebraPrintHelper.cs" />
+    <Compile Include="com.amtec.common\ImsApiKey.cs" />
+    <Compile Include="com.amtec.common\ImsApiUtils.cs" />
+    <Compile Include="com.amtec.configurations\ApplicationConfiguration.cs" />
+    <Compile Include="com.amtec.configurations\LanguageResources.cs" />
+    <Compile Include="com.amtec.configurations\ReadIhasFileData.cs" />
+    <Compile Include="com.amtec.configurations\SessionContextHeandler.cs" />
+    <Compile Include="com.amtec.configurations\SystemVariable.cs" />
+    <Compile Include="com.amtec.device\ScannerHeandler.cs" />
+    <Compile Include="com.amtec.forms\ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.amtec.forms\ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.amtec.forms\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.amtec.forms\MainView.designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.amtec.forms\InitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.amtec.forms\InitDialog.designer.cs">
+      <DependentUpon>InitDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.amtec.forms\PosGraghicsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.amtec.forms\PosGraghicsForm.Designer.cs">
+      <DependentUpon>PosGraghicsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.amtec.forms\Reprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.amtec.forms\Reprint.Designer.cs">
+      <DependentUpon>Reprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.amtec.forms\TopMostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.amtec.forms\TopMostForm.designer.cs">
+      <DependentUpon>TopMostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.amtec.model\CheckListItemEntity.cs" />
+    <Compile Include="com.amtec.model\CommonModel.cs" />
+    <Compile Include="com.amtec.model\ConfigEntity.cs" />
+    <Compile Include="com.amtec.model\DocumentEntity.cs" />
+    <Compile Include="com.amtec.model\EquipmentEntity.cs" />
+    <Compile Include="com.amtec.model\GetStationSettingModel.cs" />
+    <Compile Include="com.amtec.model\InitModel.cs" />
+    <Compile Include="com.amtec.model\MdataGetPartData.cs" />
+    <Compile Include="com.amtec.forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.amtec.forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.amtec.model\ParameterEntity.cs" />
+    <Compile Include="com.amtec.model\ProductEntity.cs" />
+    <Compile Include="com.amtec.model\SerialNumberStateEntity.cs" />
+    <Compile Include="com.amtec.model\ShippingLotEntity.cs" />
+    <Compile Include="com.amtec.model\SNFromShippingLotEntity.cs" />
+    <Compile Include="com.amtec.model\WorkplanEntity.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="com.amtec.forms\ErrorForm.resx">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.amtec.forms\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.amtec.forms\InitDialog.resx">
+      <DependentUpon>InitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.amtec.forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.amtec.forms\PosGraghicsForm.resx">
+      <DependentUpon>PosGraghicsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.amtec.forms\Reprint.resx">
+      <DependentUpon>Reprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.amtec.forms\TopMostForm.resx">
+      <DependentUpon>TopMostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="ConfigFile.log4net">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ErrorCodeZH.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ihas.properties">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ATS_A_icon50x50.ico" />
+    <Content Include="CheckResultMappingFile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconAT.ico" />
+    <Content Include="icon_mes.ico" />
+    <Content Include="language.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="pic\ATS_16x16.bmp" />
+    <Content Include="pic\A_Logo_72x72.png" />
+    <Content Include="pic\background12.png" />
+    <Content Include="pic\Bar_Gray_100x12.png" />
+    <Content Include="pic\Bar_Orange_1000x12.png" />
+    <Content Include="pic\Caption_Orange.png" />
+    <Content Include="pic\Chart_Column_Silver.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pic\Clock_Blue_128x128.png" />
+    <Content Include="pic\Clock_Blue_40x40.png" />
+    <Content Include="pic\Close.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pic\Closed_Gray_32x32.png" />
+    <Content Include="pic\Closed_Gray_40x40.png" />
+    <Content Include="pic\Close_Gray_100x100.png" />
+    <Content Include="pic\Correct_Green_128x128.png" />
+    <Content Include="pic\DataInput_BackGround_Silver.png" />
+    <Content Include="pic\DMS_100x50.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pic\DMS_logo.png" />
+    <Content Include="pic\DMS_logo64x24.png" />
+    <Content Include="pic\ErrorWindow_1200x400.png" />
+    <Content Include="pic\ErrorWindow_600x200.png" />
+    <Content Include="pic\Fail_BackGround_Red.png" />
+    <Content Include="pic\Fail_Red.png" />
+    <Content Include="pic\Form_BackGround.png" />
+    <Content Include="pic\Info_Gray_40x40.png" />
+    <Content Include="pic\InputData_Error_Red_400x200.png" />
+    <Content Include="pic\Instruction.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pic\itac_logo_weiss.png" />
+    <Content Include="pic\Lock_Black_24x24.png" />
+    <Content Include="pic\Maximized_Arrow_Gray_32x32.png" />
+    <Content Include="pic\Maximized_Gray_100x100.png" />
+    <Content Include="pic\Maximized_Gray_32x32.png" />
+    <Content Include="pic\Maximized_Gray_32x321.png" />
+    <Content Include="pic\Maximized_Gray_32x322.png" />
+    <Content Include="pic\Maximized_Gray_40x40.png" />
+    <Content Include="pic\Mininized_Gray_40x40.png" />
+    <Content Include="pic\NetWorkConnectedGreen24x24.png" />
+    <Content Include="pic\NetWorkDisconnectedRed24x24.png" />
+    <Content Include="pic\ok.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pic\OOB_White1.gif" />
+    <Content Include="pic\Panel_Back_Silver_300x300.png" />
+    <Content Include="pic\Pass_BackGround_Green.png" />
+    <Content Include="pic\Pass_Green.png" />
+    <Content Include="pic\Pass_Green1.png" />
+    <Content Include="pic\Pass_Green_1.png" />
+    <Content Include="pic\Setting_Gray_40x40.png" />
+    <Content Include="pic\Staff_Blue_Green_128x128.png" />
+    <Content Include="pic\Staff_Blue_Green_32x32.png" />
+    <Content Include="pic\Startup_Window_400x200.png" />
+    <Content Include="pic\Startup_Window_Matellic_400x200.png" />
+    <Content Include="pic\Station_Blue_32x32.png" />
+    <Content Include="pic\Station_icon_32x32.png" />
+    <Content Include="pic\Station_Orange_72x72.png" />
+    <Content Include="pic\SwitchMainAppGrey36x36.png" />
+    <Content Include="pic\table_go.png" />
+    <Content Include="pic\table_refresh.png" />
+    <Content Include="pic\TEST.png" />
+    <Content Include="pic\Title_Blue_Top.png" />
+    <Content Include="pic\Unlock_White_24x24.png" />
+    <Content Include="pic\UserSkill_Green_32x32.png" />
+    <Content Include="pic\UserSkill_Red_32x32.png" />
+    <Content Include="pic\User_Green_32x32.png" />
+    <Content Include="pic\Yield_White.png" />
+    <Content Include="TaskFile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrintLibrary\PrintingLibrary.csproj">
+      <Project>{646603c6-730c-4f5b-98d7-0ad9fbf1ebef}</Project>
+      <Name>PrintingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
